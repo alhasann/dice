@@ -15,12 +15,13 @@ document.querySelector(".img1").setAttribute("src", attributer1);
 document.querySelector(".img2").setAttribute("src", attributer2);
 
 // who is the winner 
+var w ; //the player 
 if (attributer1 > attributer2) {
-    x = "Player 1";
+    w = "Player 1";
 } else if (attributer2 > attributer1) {
-    x = 'Player 2';
+    w = 'Player 2';
 } else {
 
     document.querySelector('.winner').innerHTML = "DRAW";
 }
-document.getElementById('winner').innerHTML = x;
+document.getElementById('winner').innerHTML = w;
